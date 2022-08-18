@@ -34,5 +34,3 @@ struct TipDetail: Hashable {
         self.publishedDateString = publishedDateString
     }
 }
-
-let tip = TipDetail(category: "2", accountName: "2", imageURL: URL(string: "2")!, detail: "2", publishedDateString: "2")
