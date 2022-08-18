@@ -20,7 +20,11 @@ struct TipsListView: View {
     var body: some View {
         List {
             ForEach(Array(list.enumerated()), id: \.element) { index, data in
-                NavigationLink(destination: TipsDetailView()) {
+                ZStack {
+                    NavigationLink(destination: TipsDetailView()) {
+                        EmptyView()
+                    }
+                    .opacity(0)
                     tipCell(tip: data)
                         .padding(.vertical, 10)
                         .padding(.bottom, isLastCell(index: index) ? 60 : 0)
