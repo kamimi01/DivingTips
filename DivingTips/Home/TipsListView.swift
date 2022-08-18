@@ -20,12 +20,15 @@ struct TipsListView: View {
     var body: some View {
         List {
             ForEach(Array(list.enumerated()), id: \.element) { index, data in
-                tipCell(tip: data)
-                    .padding(.vertical, 10)
-                    .padding(.bottom, isLastCell(index: index) ? 60 : 0)
+                NavigationLink(destination: TipsDetailView()) {
+                    tipCell(tip: data)
+                        .padding(.vertical, 10)
+                        .padding(.bottom, isLastCell(index: index) ? 60 : 0)
+                }
             }
         }
         .listStyle(.plain)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

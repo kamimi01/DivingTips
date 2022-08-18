@@ -25,6 +25,7 @@
 		D4CFA62428AA959D00709ED9 /* PostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFA62328AA959D00709ED9 /* PostButton.swift */; };
 		D4CFA62628AB5F5700709ED9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFA62528AB5F5700709ED9 /* ImagePicker.swift */; };
 		D4CFA62928AB66F600709ED9 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFA62828AB66F600709ED9 /* UIApplication+Extension.swift */; };
+		D4CFA62B28AE692D00709ED9 /* TipsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFA62A28AE692C00709ED9 /* TipsDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		D4CFA62328AA959D00709ED9 /* PostButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostButton.swift; sourceTree = "<group>"; };
 		D4CFA62528AB5F5700709ED9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		D4CFA62828AB66F600709ED9 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		D4CFA62A28AE692C00709ED9 /* TipsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		D4CFA60F28AA256D00709ED9 /* TipsDetail */ = {
 			isa = PBXGroup;
 			children = (
+				D4CFA62A28AE692C00709ED9 /* TipsDetailView.swift */,
 			);
 			path = TipsDetail;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				D4CFA61828AA2A8000709ED9 /* TabBarItem.swift in Sources */,
 				D4CFA61C28AA2BB200709ED9 /* AccountView.swift in Sources */,
 				D4CFA61628AA278200709ED9 /* TabBarView.swift in Sources */,
+				D4CFA62B28AE692D00709ED9 /* TipsDetailView.swift in Sources */,
 				D4CFA61E28AA654500709ED9 /* CategoryListView.swift in Sources */,
 				D4CFA62628AB5F5700709ED9 /* ImagePicker.swift in Sources */,
 				D4CFA62228AA779000709ED9 /* TipDetail.swift in Sources */,

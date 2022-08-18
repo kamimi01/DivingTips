@@ -9,16 +9,20 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        ZStack {
-            VStack {
-                CategoryListView()
-                    .padding(.leading, 16)
-                Divider()
-                    .background(Color.gray)
-                TipsListView()
-                Spacer()
+        NavigationView {
+            ZStack {
+                VStack {
+                    CategoryListView()
+                        .padding(.leading, 16)
+                    Divider()
+                        .background(Color.gray)
+                    TipsListView()
+                    Spacer()
+                }
+                PostButton()
             }
-            PostButton()
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
 }
