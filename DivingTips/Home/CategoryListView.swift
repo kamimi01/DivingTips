@@ -20,6 +20,7 @@ struct CategoryListView: View {
                 }
             }
         }
+        .padding(.top, 10)
     }
 }
 
