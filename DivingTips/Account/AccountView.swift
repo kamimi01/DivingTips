@@ -53,7 +53,7 @@ private extension AccountView {
     }
     
     var tipsList: some View {
-        NavigationLink(destination: HomeView()) {
+        NavigationLink(destination: TipsListView()) {
             Text("コツ一覧")
         }
     }
