@@ -10,13 +10,16 @@ import Firebase
 
 @main
 struct DivingTipsApp: App {
+    @StateObject var userAuth = UserAuthModel()
+
     init() {
         FirebaseApp.configure()
     }
 
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            SignInView()
+                .environmentObject(userAuth)
         }
     }
 }

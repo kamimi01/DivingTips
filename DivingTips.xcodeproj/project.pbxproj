@@ -32,6 +32,7 @@
 		D4CFA63628AEF19000709ED9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D4CFA63528AEF19000709ED9 /* FirebaseCrashlytics */; };
 		D4CFA63828AEF19000709ED9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D4CFA63728AEF19000709ED9 /* FirebaseFirestore */; };
 		D4CFA63E28AEF8D600709ED9 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D4CFA63D28AEF8D600709ED9 /* GoogleSignIn */; };
+		D4CFA64228B04BF400709ED9 /* UserAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFA64128B04BF400709ED9 /* UserAuthModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		D4CFA62A28AE692C00709ED9 /* TipsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsDetailView.swift; sourceTree = "<group>"; };
 		D4CFA62E28AEEFBB00709ED9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D4CFA63B28AEF4D900709ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D4CFA64128B04BF400709ED9 /* UserAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				D4CFA5E528AA24DD00709ED9 /* SignInView.swift */,
+				D4CFA64128B04BF400709ED9 /* UserAuthModel.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				D4CFA62B28AE692D00709ED9 /* TipsDetailView.swift in Sources */,
 				D4CFA61E28AA654500709ED9 /* CategoryListView.swift in Sources */,
 				D4CFA62628AB5F5700709ED9 /* ImagePicker.swift in Sources */,
+				D4CFA64228B04BF400709ED9 /* UserAuthModel.swift in Sources */,
 				D4CFA62228AA779000709ED9 /* TipDetail.swift in Sources */,
 				D4CFA5E428AA24DD00709ED9 /* DivingTipsApp.swift in Sources */,
 				D4CFA62928AB66F600709ED9 /* UIApplication+Extension.swift in Sources */,
