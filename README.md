@@ -4,24 +4,27 @@
 
 ## 📌 Table of Contents
 
-- [📖 About The Project](#%F0%9F%93%96+About+The+Project)
-- [👩🏻‍💻 Technologies](%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB+Technologies)
-- [🔨 Launch](%F0%9F%94%A8+Launch)
+- [:book: About The Project](#book-about-the-project)
+  - [Functionalities](#functionalities)
+- [:computer: Technologies](#computer-technologies)
+- [:hammer: Launch](#hammer-launch)
+  - [Pre-requisites](#pre-requisites)
+  - [How to Build](#how-to-build)
 
-## 📖 About The Project
+## :book: About The Project
 
 ### Functionalities
 
-[(Back to top)](#%F0%9F%93%8C+Table+of+Contents)
+[(Back to top)](#-table-of-contents)
 
-## 👩🏻‍💻 Technologies
+## :computer: Technologies
 
-[(Back to top)](#%F0%9F%93%8C+Table+of+Contents)
+[(Back to top)](#-table-of-contents)
 
-## 🔨 Launch
+## :hammer: Launch
 
 ### Pre-requisites
 
 ### How to Build
 
-[(Back to top)](#%F0%9F%93%8C+Table+of+Contents)
+[(Back to top)](#-table-of-contents)
