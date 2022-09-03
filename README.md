@@ -1,4 +1,4 @@
-# Title
+# An app to Post and Share tips of scuba diving
 
 [README in Japanese](./docs/ja/README.md)
 
