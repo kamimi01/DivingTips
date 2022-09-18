@@ -147,15 +147,10 @@
 		D4CFA5E228AA24DD00709ED9 /* DivingTips */ = {
 			isa = PBXGroup;
 			children = (
+				D4FD1BA028D74BB000B1538F /* Common */,
+				D4FD1B9F28D74BA900B1538F /* Features */,
 				D4CFA63B28AEF4D900709ED9 /* Info.plist */,
 				D4CFA62E28AEEFBB00709ED9 /* GoogleService-Info.plist */,
-				D4CFA62728AB66E500709ED9 /* Extensions */,
-				D4CFA61428AA277700709ED9 /* TabBar */,
-				D4CFA61128AA259800709ED9 /* Account */,
-				D4CFA61028AA258500709ED9 /* TipsPost */,
-				D4CFA60F28AA256D00709ED9 /* TipsDetail */,
-				D4CFA60E28AA256700709ED9 /* Home */,
-				D4CFA60D28AA255B00709ED9 /* SignIn */,
 				D4CFA5E328AA24DD00709ED9 /* DivingTipsApp.swift */,
 				D4CFA5E728AA24E000709ED9 /* Assets.xcassets */,
 				D4CFA5E928AA24E000709ED9 /* Preview Content */,
@@ -209,7 +204,7 @@
 		D4CFA60F28AA256D00709ED9 /* TipsDetail */ = {
 			isa = PBXGroup;
 			children = (
-				D4CFA62A28AE692C00709ED9 /* TipsDetailView.swift */,
+				D4FD1BA628D74C6E00B1538F /* Views */,
 			);
 			path = TipsDetail;
 			sourceTree = "<group>";
@@ -217,8 +212,7 @@
 		D4CFA61028AA258500709ED9 /* TipsPost */ = {
 			isa = PBXGroup;
 			children = (
-				D4CFA61928AA2B7500709ED9 /* TipsPostView.swift */,
-				D4CFA62528AB5F5700709ED9 /* ImagePicker.swift */,
+				D4FD1BA428D74C4300B1538F /* Views */,
 			);
 			path = TipsPost;
 			sourceTree = "<group>";
@@ -226,7 +220,7 @@
 		D4CFA61128AA259800709ED9 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				D4CFA61B28AA2BB200709ED9 /* AccountView.swift */,
+				D4FD1BA328D74C3B00B1538F /* Views */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -234,19 +228,9 @@
 		D4CFA61428AA277700709ED9 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				D4CFA61528AA278200709ED9 /* TabBarView.swift */,
-				D4CFA61728AA2A8000709ED9 /* TabBarItem.swift */,
+				D4FD1BA128D74C1E00B1538F /* Views */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		D4CFA62728AB66E500709ED9 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				D4CFA62828AB66F600709ED9 /* UIApplication+Extension.swift */,
-				D4C279B728D7419D009D8C3E /* View+Extensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D4FD1B9128D743BA00B1538F /* Views */ = {
@@ -304,6 +288,78 @@
 				D4CFA62128AA779000709ED9 /* TipDetail.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		D4FD1B9F28D74BA900B1538F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFA60D28AA255B00709ED9 /* SignIn */,
+				D4CFA61428AA277700709ED9 /* TabBar */,
+				D4CFA60E28AA256700709ED9 /* Home */,
+				D4CFA61128AA259800709ED9 /* Account */,
+				D4CFA61028AA258500709ED9 /* TipsPost */,
+				D4CFA60F28AA256D00709ED9 /* TipsDetail */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D4FD1BA028D74BB000B1538F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFA62828AB66F600709ED9 /* UIApplication+Extension.swift */,
+				D4C279B728D7419D009D8C3E /* View+Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D4FD1BA128D74C1E00B1538F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4FD1BA228D74C2F00B1538F /* Components */,
+				D4CFA61528AA278200709ED9 /* TabBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4FD1BA228D74C2F00B1538F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFA61728AA2A8000709ED9 /* TabBarItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D4FD1BA328D74C3B00B1538F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFA61B28AA2BB200709ED9 /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4FD1BA428D74C4300B1538F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4FD1BA528D74C6200B1538F /* Components */,
+				D4CFA61928AA2B7500709ED9 /* TipsPostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4FD1BA528D74C6200B1538F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFA62528AB5F5700709ED9 /* ImagePicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D4FD1BA628D74C6E00B1538F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFA62A28AE692C00709ED9 /* TipsDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
