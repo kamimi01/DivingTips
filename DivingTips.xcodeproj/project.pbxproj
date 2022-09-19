@@ -40,6 +40,9 @@
 		D4CFA64228B04BF400709ED9 /* UserAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFA64128B04BF400709ED9 /* UserAuthModel.swift */; };
 		D4FD1B9828D745FA00B1538F /* WelcomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FD1B9728D745FA00B1538F /* WelcomeImageView.swift */; };
 		D4FD1B9A28D7467300B1538F /* SignInWithAppleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FD1B9928D7467300B1538F /* SignInWithAppleButtonView.swift */; };
+		D4FD1BA928D74D6600B1538F /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = D4FD1BA828D74D6600B1538F /* Rswift */; };
+		D4FD1BAD28D7ED3900B1538F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FD1BAC28D7ED3900B1538F /* R.generated.swift */; };
+		D4FD1BAF28D7ED9500B1538F /* RSwift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FD1BAE28D7ED9500B1538F /* RSwift+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,8 @@
 		D4CFA64128B04BF400709ED9 /* UserAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthModel.swift; sourceTree = "<group>"; };
 		D4FD1B9728D745FA00B1538F /* WelcomeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeImageView.swift; sourceTree = "<group>"; };
 		D4FD1B9928D7467300B1538F /* SignInWithAppleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonView.swift; sourceTree = "<group>"; };
+		D4FD1BAC28D7ED3900B1538F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = generated/R.generated.swift; sourceTree = SOURCE_ROOT; };
+		D4FD1BAE28D7ED9500B1538F /* RSwift+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RSwift+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,7 @@
 				D4CFA63E28AEF8D600709ED9 /* GoogleSignIn in Frameworks */,
 				D4CFA63628AEF19000709ED9 /* FirebaseCrashlytics in Frameworks */,
 				D4CFA63828AEF19000709ED9 /* FirebaseFirestore in Frameworks */,
+				D4FD1BA928D74D6600B1538F /* Rswift in Frameworks */,
 				D4CFA63228AEF19000709ED9 /* FirebaseAnalytics in Frameworks */,
 				D4CFA63428AEF19000709ED9 /* FirebaseAuth in Frameworks */,
 			);
@@ -152,7 +158,6 @@
 				D4CFA63B28AEF4D900709ED9 /* Info.plist */,
 				D4CFA62E28AEEFBB00709ED9 /* GoogleService-Info.plist */,
 				D4CFA5E328AA24DD00709ED9 /* DivingTipsApp.swift */,
-				D4CFA5E728AA24E000709ED9 /* Assets.xcassets */,
 				D4CFA5E928AA24E000709ED9 /* Preview Content */,
 			);
 			path = DivingTips;
@@ -306,6 +311,7 @@
 		D4FD1BA028D74BB000B1538F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D4FD1BAB28D7ED2200B1538F /* Resources */,
 				D4CFA62828AB66F600709ED9 /* UIApplication+Extension.swift */,
 				D4C279B728D7419D009D8C3E /* View+Extensions.swift */,
 			);
@@ -362,6 +368,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D4FD1BAB28D7ED2200B1538F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4FD1BAC28D7ED3900B1538F /* R.generated.swift */,
+				D4CFA5E728AA24E000709ED9 /* Assets.xcassets */,
+				D4FD1BAE28D7ED9500B1538F /* RSwift+Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +385,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4CFA60428AA24E000709ED9 /* Build configuration list for PBXNativeTarget "DivingTips" */;
 			buildPhases = (
+				D4FD1BAA28D7E51A00B1538F /* R.Swift */,
 				D4CFA5DC28AA24DD00709ED9 /* Sources */,
 				D4CFA5DD28AA24DD00709ED9 /* Frameworks */,
 				D4CFA5DE28AA24DD00709ED9 /* Resources */,
@@ -384,6 +401,7 @@
 				D4CFA63528AEF19000709ED9 /* FirebaseCrashlytics */,
 				D4CFA63728AEF19000709ED9 /* FirebaseFirestore */,
 				D4CFA63D28AEF8D600709ED9 /* GoogleSignIn */,
+				D4FD1BA828D74D6600B1538F /* Rswift */,
 			);
 			productName = DivingTips;
 			productReference = D4CFA5E028AA24DD00709ED9 /* DivingTips.app */;
@@ -460,6 +478,7 @@
 			packageReferences = (
 				D4CFA63028AEF19000709ED9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				D4CFA63C28AEF8D600709ED9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				D4FD1BA728D74D6600B1538F /* XCRemoteSwiftPackageReference "R.swift.Library" */,
 			);
 			productRefGroup = D4CFA5E128AA24DD00709ED9 /* Products */;
 			projectDirPath = "";
@@ -499,6 +518,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D4FD1BAA28D7E51A00B1538F /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/generated/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which rswift >/dev/null; then\n    rswift generate \"$SRCROOT/generated/R.generated.swift\"\nelse\n    echo \"warning: rswift not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4CFA5DC28AA24DD00709ED9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -508,6 +550,7 @@
 				D4CFA62428AA959D00709ED9 /* PostButton.swift in Sources */,
 				D4CFA61328AA264100709ED9 /* HomeView.swift in Sources */,
 				D4CFA61A28AA2B7500709ED9 /* TipsPostView.swift in Sources */,
+				D4FD1BAF28D7ED9500B1538F /* RSwift+Extensions.swift in Sources */,
 				D4CFA62028AA76C800709ED9 /* TipsListView.swift in Sources */,
 				D4CFA5E628AA24DD00709ED9 /* SignInView.swift in Sources */,
 				D4C279B428D73FB6009D8C3E /* SignInWithGoogleButtonView.swift in Sources */,
@@ -516,6 +559,7 @@
 				D4CFA61C28AA2BB200709ED9 /* AccountView.swift in Sources */,
 				D4C279B628D7402A009D8C3E /* UserNameView.swift in Sources */,
 				D4C279B228D73E3C009D8C3E /* SignOutButtonView.swift in Sources */,
+				D4FD1BAD28D7ED3900B1538F /* R.generated.swift in Sources */,
 				D4CFA61628AA278200709ED9 /* TabBarView.swift in Sources */,
 				D4CFA62B28AE692D00709ED9 /* TipsDetailView.swift in Sources */,
 				D4CFA61E28AA654500709ED9 /* CategoryListView.swift in Sources */,
@@ -874,6 +918,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		D4FD1BA728D74D6600B1538F /* XCRemoteSwiftPackageReference "R.swift.Library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -901,6 +953,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D4CFA63C28AEF8D600709ED9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
+		};
+		D4FD1BA828D74D6600B1538F /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4FD1BA728D74D6600B1538F /* XCRemoteSwiftPackageReference "R.swift.Library" */;
+			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

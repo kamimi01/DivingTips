@@ -13,6 +13,9 @@ struct SignInWithGoogleButtonView: View {
             // userAuth.signIn()
         }) {
             HStack {
+                Image(R.image.googleLogo.name)
+                    .resizable()
+                    .frame(width: 35, height: 35)
                 Text("Google でサインイン")
             }
         }
