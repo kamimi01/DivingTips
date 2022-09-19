@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignOutButtonView: View {
+struct SignOutButton: View {
     var body: some View {
         Button(action: {
             // do something  userAuth.signOut()
@@ -18,8 +18,8 @@ struct SignOutButtonView: View {
     }
 }
 
-struct SignOutButtonView_Previews: PreviewProvider {
+struct SignOutButton_Previews: PreviewProvider {
     static var previews: some View {
-        SignOutButtonView()
+        SignOutButton()
     }
 }

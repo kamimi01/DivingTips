@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CategoryListView: View {
+struct CategoryList: View {
     private let categories: [String] = ["機材", "潜航", "ナビゲーション", "上昇", "フィンワーク"]
     @State private var selectedCategory = ""
     
@@ -24,7 +24,7 @@ struct CategoryListView: View {
     }
 }
 
-private extension CategoryListView {
+private extension CategoryList {
     func categoryView(name: String, selectedCategory: String) -> some View {
         Button(action: {
             self.selectedCategory = name
@@ -43,9 +43,9 @@ private extension CategoryListView {
     }
 }
 
-struct CategoryListView_Previews: PreviewProvider {
+struct CategoryList_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryListView()
+        CategoryList()
             .previewLayout(.fixed(width: 450, height: 100))
     }
 }

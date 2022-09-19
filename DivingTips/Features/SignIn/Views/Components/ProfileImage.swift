@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileImageView: View {
+struct ProfileImage: View {
     var URLString = ""
 
     var body: some View {
@@ -16,8 +16,8 @@ struct ProfileImageView: View {
     }
 }
 
-struct ProfileImageView_Previews: PreviewProvider {
+struct ProfileImage_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileImageView()
+        ProfileImage()
     }
 }

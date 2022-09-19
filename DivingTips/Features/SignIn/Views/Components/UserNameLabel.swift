@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct UserNameView: View {
+struct UserNameLabel: View {
     var body: some View {
 //        Text(userAuth.givenName)
         Text("username")
     }
 }
 
-struct UserNameView_Previews: PreviewProvider {
+struct UserNameLabel_Previews: PreviewProvider {
     static var previews: some View {
-        UserNameView()
+        UserNameLabel()
     }
 }

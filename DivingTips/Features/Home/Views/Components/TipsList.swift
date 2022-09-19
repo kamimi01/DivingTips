@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TipsListView: View {
+struct TipsList: View {
     private let list = [
         TipDetail(category: "機材", accountName: "kamimi0101010", imageURL: URL(string: "2")!, detail: "テストテストテストテストテストテスト3テスト4テストテスト3テスト4", publishedDateString: "2022/4/11"),
         TipDetail(category: "潜航", accountName: "kamimi0101010", imageURL: URL(string: "2")!, detail: "テストテストテストテストテストテスト3テスト4", publishedDateString: "2022/4/11"),
@@ -21,7 +21,7 @@ struct TipsListView: View {
         List {
             ForEach(Array(list.enumerated()), id: \.element) { index, data in
                 ZStack {
-                    NavigationLink(destination: TipsDetailView()) {
+                    NavigationLink(destination: TipsDetailScreen()) {
                         EmptyView()
                     }
                     .opacity(0)
@@ -36,7 +36,7 @@ struct TipsListView: View {
     }
 }
 
-private extension TipsListView {
+private extension TipsList {
     func tipCell(tip: TipDetail) -> some View {
         Button(action: {
             
@@ -88,9 +88,9 @@ private extension TipsListView {
     }
 }
 
-struct TipsListView_Previews: PreviewProvider {
+struct TipsList_Previews: PreviewProvider {
     static var previews: some View {
-        TipsListView()
+        TipsList()
             .previewLayout(.fixed(width: 450, height: 600))
     }
 }

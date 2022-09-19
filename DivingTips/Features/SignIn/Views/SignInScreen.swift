@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct SignInView: View {
+struct SignInScreen: View {
     @EnvironmentObject var userAuth: UserAuthModel
 
     var body: some View {
         VStack {
-            WelcomeImageView()
+            WelcomeImage()
             Spacer()
 //            UserNameView()
 //            ProfileImageView()
@@ -21,23 +21,23 @@ struct SignInView: View {
 //            } else {
 //                SignInButtonView()
 //            }
-            SignInWithGoogleButtonView()
-            SignInWithAppleButtonView()
+            SignInWithGoogleButton()
+            SignInWithAppleButton()
 //            errorMessage
             Spacer()
         }
     }
 }
 
-private extension SignInView {
+private extension SignInScreen {
     var errorMessage: some View {
         Text(userAuth.errorMessage)
     }
 }
 
-struct SignInView_Previews: PreviewProvider {
+struct SignInScreen_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignInScreen()
             .environmentObject(UserAuthModel())
     }
 }

@@ -18,7 +18,7 @@ struct DivingTipsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            TabBar()
         }
     }
 }

@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct SignInWithGoogleButtonView: View {
+struct SignInWithGoogleButton: View {
     var body: some View {
         Button(action: {
             // userAuth.signIn()
         }) {
             HStack {
-                Image(R.image.googleLogo.name)
-                    .resizable()
-                    .frame(width: 35, height: 35)
+                Image(googleLogo)
+                    .smallStyle()
                 Text("Google でサインイン")
+                    .mainTextStyle()
             }
         }
     }
 }
 
-struct SignInButtonView_Previews: PreviewProvider {
+struct SignInWithGoogleButton_Previews: PreviewProvider {
     static var previews: some View {
-        SignInWithGoogleButtonView()
+        SignInWithGoogleButton()
     }
 }

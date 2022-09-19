@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct SignInWithAppleButtonView: View {
+struct SignInWithAppleButton: View {
     var body: some View {
         Text("Apple でサインイン")
     }
 }
 
-struct SignInWithAppleButtonView_Previews: PreviewProvider {
+struct SignInWithAppleButton_Previews: PreviewProvider {
     static var previews: some View {
-        SignInWithAppleButtonView()
+        SignInWithAppleButton()
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TipsPostView: View {
+struct TipsPostScreen: View {
     @State private var tipDetail = ""
     @State private var isShownImagePicker = false
     @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
@@ -57,7 +57,7 @@ struct TipsPostView: View {
     }
 }
 
-private extension TipsPostView {
+private extension TipsPostScreen {
     var textEditor: some View {
         TextEditor(text: $tipDetail)
             .frame(maxWidth: .infinity)
@@ -177,8 +177,8 @@ private extension TipsPostView {
     }
 }
 
-struct TipsPostView_Previews: PreviewProvider {
+struct TipsPostScreen_Previews: PreviewProvider {
     static var previews: some View {
-        TipsPostView()
+        TipsPostScreen()
     }
 }

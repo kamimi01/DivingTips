@@ -30,7 +30,7 @@ struct PostButton: View {
             }
         }
         .fullScreenCover(isPresented: $isShownTipPost) {
-            TipsPostView()
+            TipsPostScreen()
         }
     }
 }

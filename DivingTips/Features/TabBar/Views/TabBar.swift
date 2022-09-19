@@ -14,12 +14,12 @@ enum TabBarType: String, CaseIterable {
     var tabBarView: some View {
         switch self {
         case .home:
-            return AnyView(HomeView()
+            return AnyView(HomeScreen()
                 .tabItem {
                     TabBarItem(imageName: "house", text: "ホーム")
                 }).tag(TabBarType.home)
         case .account:
-            return AnyView(AccountView()
+            return AnyView(AccountScreen()
                 .tabItem {
                     TabBarItem(imageName: "person.crop.circle", text: "アカウント")
                 }).tag(TabBarType.account)
@@ -27,7 +27,7 @@ enum TabBarType: String, CaseIterable {
     }
 }
 
-struct TabBarView: View {
+struct TabBar: View {
     var body: some View {
         TabView {
             ForEach(TabBarType.allCases, id: \.self) { type in
@@ -37,8 +37,8 @@ struct TabBarView: View {
     }
 }
 
-struct TabBarView_Previews: PreviewProvider {
+struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarView()
+        TabBar()
     }
 }

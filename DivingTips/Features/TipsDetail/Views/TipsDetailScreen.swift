@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TipsDetailView: View {
+struct TipsDetailScreen: View {
     @State private var isShownTipsPostView = false
     private let detail = "テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4vテストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4vテストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4vテストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4テストテストテストテストテストテスト3テスト4テストテスト3テスト4vテストテストテストテストテストテスト3テスト4テストテスト3テスト4"
     
@@ -37,7 +37,7 @@ struct TipsDetailView: View {
     }
 }
 
-private extension TipsDetailView {
+private extension TipsDetailScreen {
     var editButton: some View {
         Button(action: {
             isShownTipsPostView = true
@@ -46,13 +46,13 @@ private extension TipsDetailView {
                 .foregroundColor(.black)
         }
         .fullScreenCover(isPresented: $isShownTipsPostView) {
-            TipsPostView()
+            TipsPostScreen()
         }
     }
 }
 
-struct TipsDetailView_Previews: PreviewProvider {
+struct TipsDetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        TipsDetailView()
+        TipsDetailScreen()
     }
 }

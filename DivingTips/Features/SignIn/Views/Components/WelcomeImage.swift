@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct WelcomeImageView: View {
+struct WelcomeImage: View {
     var body: some View {
         Text("Welcome to DivingTips!")
     }
 }
 
-struct WelcomeImageView_Previews: PreviewProvider {
+struct WelcomeImage_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeImageView()
+        WelcomeImage()
     }
 }

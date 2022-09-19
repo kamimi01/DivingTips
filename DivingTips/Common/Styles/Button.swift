@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: - Button
 extension View {
     func authButtonStyle() -> some View {
         self.border(Color.blue)

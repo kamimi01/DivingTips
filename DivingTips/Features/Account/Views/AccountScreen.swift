@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AccountView: View {
+struct AccountScreen: View {
     @Environment(\.openURL) var openURL
     
     var body: some View {
@@ -34,7 +34,7 @@ struct AccountView: View {
     }
 }
 
-private extension AccountView {
+private extension AccountScreen {
     var profileView: some View {
         HStack {
             Image(systemName: "person")
@@ -53,7 +53,7 @@ private extension AccountView {
     }
     
     var tipsList: some View {
-        NavigationLink(destination: TipsListView()) {
+        NavigationLink(destination: TipsList()) {
             Text("コツ一覧")
         }
     }
@@ -83,8 +83,8 @@ private extension AccountView {
     }
 }
 
-struct AccountView_Previews: PreviewProvider {
+struct AccountScreen_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView()
+        AccountScreen()
     }
 }
