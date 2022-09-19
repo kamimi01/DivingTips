@@ -26,6 +26,7 @@ struct SignInScreen: View {
 //            errorMessage
             Spacer()
         }
+        .padding(.horizontal, 32)
     }
 }
 

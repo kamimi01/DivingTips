@@ -16,9 +16,10 @@ struct SignInWithGoogleButton: View {
                 Image(googleLogo)
                     .smallStyle()
                 Text("Google でサインイン")
-                    .mainTextStyle()
+                    .mainTextStyle(textColor: Color.extendedColorGray)
             }
         }
+        .roundedWithBorderButtonStyle(borderColor: Color.extendedColorGray)
     }
 }
 

@@ -12,6 +12,6 @@ extension Image {
     func smallStyle() -> some View {
         self
             .resizable()
-            .frame(width: 35, height: 35)
+            .frame(width: 30, height: 30)
     }
 }

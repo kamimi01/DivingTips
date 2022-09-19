@@ -14,7 +14,6 @@ struct SignOutButton: View {
         }) {
             Text("サインアウト")
         }
-        .authButtonStyle()
     }
 }
 

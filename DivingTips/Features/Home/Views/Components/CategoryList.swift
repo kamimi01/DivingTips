@@ -10,6 +10,7 @@ import SwiftUI
 struct CategoryList: View {
     private let categories: [String] = ["機材", "潜航", "ナビゲーション", "上昇", "フィンワーク"]
     @State private var selectedCategory = ""
+    @State private var isSelected = false
     
     var body: some View {
         ScrollView(.horizontal) {
@@ -30,16 +31,12 @@ private extension CategoryList {
             self.selectedCategory = name
         }) {
             Text(name)
-                .foregroundColor(name == selectedCategory ? .white : .black)
-                .padding(13)
-                .background(name == selectedCategory ? Color.gray : Color.white)
-                .cornerRadius(24)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 24)
-                        .stroke(Color.gray, lineWidth: 1.0)
-                )
-                .padding(5)
         }
+        .switchButtonStyle(isSelected: isSelected(name: name, selectedCategory: selectedCategory))
+    }
+
+    func isSelected(name: String, selectedCategory: String) -> Bool {
+        return name == selectedCategory
     }
 }
 

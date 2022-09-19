@@ -9,9 +9,9 @@ import SwiftUI
 
 // MARK: - Text Styles
 extension View {
-    func mainTextStyle() -> some View {
+    func mainTextStyle(textColor: Color) -> some View {
         self
-            .foregroundColor(Color.extendedColorGray)
-            .font(.title2)
+            .foregroundColor(textColor)
+            .font(.title3)
     }
 }

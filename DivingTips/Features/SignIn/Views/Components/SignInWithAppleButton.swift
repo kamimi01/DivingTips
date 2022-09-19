@@ -9,7 +9,17 @@ import SwiftUI
 
 struct SignInWithAppleButton: View {
     var body: some View {
-        Text("Apple でサインイン")
+        Button(action: {
+            // userAuth.signIn()
+        }) {
+            HStack {
+                Image(appleLogo)
+                    .smallStyle()
+                Text("Apple でサインイン")
+                    .mainTextStyle(textColor: Color.white)
+            }
+        }
+        .roundedButtonStyle(backgroundColor: Color.black)
     }
 }
 

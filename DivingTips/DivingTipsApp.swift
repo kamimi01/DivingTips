@@ -18,7 +18,8 @@ struct DivingTipsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TabBar()
+//            TabBar()
+            SignInScreen()
         }
     }
 }
